@@ -1,0 +1,36 @@
+<!-- Codex Obscura — Hex-Keyhole Sigil (Header) -->
+<svg width="512" height="128" viewBox="0 0 128 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .stroke { stroke:#c2172f; fill:none; stroke-width:1.6; stroke-linecap:round; stroke-linejoin:round; }
+      .fill   { fill:#c2172f; }
+    </style>
+  </defs>
+
+  <!-- Emblem group centered left; right side left empty so MkDocs title has breathing room -->
+  <g transform="translate(16,16)">
+    <!-- Hex outline (flat-top) -->
+    <polygon class="stroke" points="
+      10.1,5.5  0,16   10.1,26.5  26.3,26.5  36.4,16  26.3,5.5
+    " transform="translate(-18,-16) scale(1.4)"/>
+    <!-- Inner ring -->
+    <circle class="stroke" cx="0" cy="0" r="6.5"/>
+    <!-- Key-slit -->
+    <line class="stroke" x1="0" y1="-5.5" x2="0" y2="5.5"/>
+    <!-- Small apex notch (implies 'classified stamp' feel) -->
+    <path class="stroke" d="M -2.5 -8.6 L 0 -10.2 L 2.5 -8.6"/>
+  </g>
+
+  <!-- Optional wordmark (kept geometric to avoid font dependencies) -->
+  <g transform="translate(48,22)" fill="#c2172f">
+    <!-- Simple rectangular glyph blocks forming C O (minimal, legible at small sizes) -->
+    <rect x="0"  y="-6" width="8"  height="1.2" rx="0.6"/>
+    <rect x="0"  y="4.8" width="8"  height="1.2" rx="0.6"/>
+    <rect x="0"  y="-6" width="1.2" height="12"  rx="0.6"/>
+    <!-- O ring -->
+    <circle cx="14" cy="0" r="6.2" class="stroke"/>
+    <circle cx="14" cy="0" r="3.2" class="stroke"/>
+    <!-- Obscura 'slash' -->
+    <rect x="22" y="-0.6" width="14" height="1.2" class="fill" />
+  </g>
+</svg>
