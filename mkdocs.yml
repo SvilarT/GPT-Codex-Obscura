@@ -1,7 +1,7 @@
 site_name: GPT Codex-Obscura
 site_description: The Forbidden Operator’s Manual — quad-layer doctrine (Recruit → Operator → Blacklayer → Specter)
-site_url: https://<YOUR-GH-USERNAME>.github.io/GPT-Codex-Obscura/
-repo_url: https://github.com/<YOUR-GH-USERNAME>/GPT-Codex-Obscura
+site_url: https://github.com/SvilarT
+repo_url: https://github.com/SvilarT/GPT-Codex-Obscura
 repo_name: Codex-Obscura
 
 theme:
@@ -37,7 +37,7 @@ extra_css:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/<YOUR-GH-USERNAME>
+      link: https://github.com/SvilarT
       name: GitHub
   generator: false
   consent:                          # disables cookie banner; remove if you need it
