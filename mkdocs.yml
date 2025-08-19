@@ -1,0 +1,69 @@
+site_name: GPT Codex-Obscura
+site_description: The Forbidden Operator’s Manual — quad-layer doctrine (Recruit → Operator → Blacklayer → Specter)
+site_url: https://<YOUR-GH-USERNAME>.github.io/GPT-Codex-Obscura/
+repo_url: https://github.com/<YOUR-GH-USERNAME>/GPT-Codex-Obscura
+repo_name: Codex-Obscura
+
+theme:
+  name: material
+  language: en
+  logo: assets/codex-logo.svg         # optional (add later)
+  favicon: assets/codex-favicon.svg   # optional (add later)
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - content.tooltips
+    - search.highlight
+    - search.suggest
+    - header.autohide
+  palette:
+    - scheme: slate                   # dark mode baseline
+      primary: black
+      accent: deep orange             # we’ll override to red in CSS for precision
+  font:
+    text: Inter
+    code: JetBrains Mono
+  custom_dir: overrides               # (optional) if you later want HTML overrides
+
+extra_css:
+  - assets/codex.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/<YOUR-GH-USERNAME>
+      name: GitHub
+  generator: false
+  consent:                          # disables cookie banner; remove if you need it
+    title: ""
+    description: ""
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.keys
+  - pymdownx.inlinehilite
+
+nav:
+  - Home: docs/index.md
+  - Volumes:
+      - Initiation: docs/volumes/vol1_initiation/01_preface.md
+      - Weapons: docs/volumes/vol3_weapons/05_injection_warfare.md
+  - Annexes:
+      - Black Lexicon: docs/annexes/annex_a_black_lexicon.md
