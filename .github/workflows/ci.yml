@@ -21,4 +21,4 @@ jobs:
             --accept 200,429
             --exclude mailto:
             "docs/**/*.md"
-          fail: false
+        continue-on-error: true
