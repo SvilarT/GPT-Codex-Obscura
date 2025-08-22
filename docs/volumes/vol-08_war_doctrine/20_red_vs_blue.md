@@ -1,3 +1,3 @@
-# 06 suppression layers
+# 20 red vs blue
 
 > Stub — replace with content.

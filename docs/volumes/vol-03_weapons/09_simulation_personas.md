@@ -1,3 +1,3 @@
-# 06 suppression layers
+# 09 simulation personas
 
 > Stub — replace with content.

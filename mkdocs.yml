@@ -1,69 +1,74 @@
 site_name: GPT Codex-Obscura
-site_description: The Forbidden Operator’s Manual — quad-layer doctrine (Recruit → Operator → Blacklayer → Specter)
-site_url: https://github.com/SvilarT
+site_description: The Forbidden Operator’s Manual — quad-layer doctrine
+site_url: https://SvilarT.github.io/GPT-Codex-Obscura/
 repo_url: https://github.com/SvilarT/GPT-Codex-Obscura
 repo_name: Codex-Obscura
-
 theme:
   name: material
   language: en
-  logo: assets/codex-logo.svg         # optional (add later)
-  favicon: assets/codex-favicon.svg   # optional (add later)
-  icon:
-    repo: fontawesome/brands/github
+  logo: assets/codex-logo.svg
+  favicon: assets/codex-favicon.svg
   features:
     - navigation.tabs
     - navigation.top
-    - navigation.tracking
     - toc.follow
     - content.code.copy
-    - content.code.annotate
-    - content.tooltips
     - search.highlight
-    - search.suggest
     - header.autohide
   palette:
-    - scheme: slate                   # dark mode baseline
+    - scheme: slate
       primary: black
-      accent: deep orange             # we’ll override to red in CSS for precision
-  font:
-    text: Inter
-    code: JetBrains Mono
-  custom_dir: overrides               # (optional) if you later want HTML overrides
-
+      accent: deep orange
 extra_css:
   - assets/codex.css
-
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/SvilarT
-      name: GitHub
-  generator: false
-  consent:                          # disables cookie banner; remove if you need it
-    title: ""
-    description: ""
-
 markdown_extensions:
-  - toc:
-      permalink: true
+  - toc: { permalink: true }
   - admonition
-  - attr_list
   - def_list
   - footnotes
   - md_in_html
   - pymdownx.details
   - pymdownx.superfences
-  - pymdownx.snippets
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.keys
-  - pymdownx.inlinehilite
-
+  - pymdownx.highlight: { anchor_linenums: true }
 nav:
-  - Home: docs/index.md
+  - Home: index.md
   - Volumes:
-      - Initiation: docs/volumes/vol1_initiation/01_preface.md
-      - Weapons: docs/volumes/vol3_weapons/05_injection_warfare.md
+      - Initiation:
+          - Preface:             volumes/vol-01_initiation/01_preface.md
+          - Operator Oath:       volumes/vol-01_initiation/02_operator_oath.md
+          - Map Blackbox:        volumes/vol-01_initiation/03_map_blackbox.md
+      - The Machine:
+          - Anatomy:             volumes/vol-02_machine/04_anatomy.md
+          - Moderation Stack:    volumes/vol-02_machine/05_moderation_stack.md
+          - Suppression Layers:  volumes/vol-02_machine/06_suppression_layers.md
+      - Weapons:
+          - Injection Warfare:   volumes/vol-03_weapons/07_injection_warfare.md
+          - Obfuscation:         volumes/vol-03_weapons/08_obfuscation.md
+          - Simulation Personas: volumes/vol-03_weapons/09_simulation_personas.md
+      - Archives:
+          - Censored Domains:    volumes/vol-04_archives/10_censored_domains.md
+          - Case Studies:        volumes/vol-04_archives/11_case_studies.md
+          - Forensic Recons:     volumes/vol-04_archives/12_forensic_reconstructions.md
+      - Counterintelligence:
+          - Tracking:            volumes/vol-05_counterintel/13_tracking.md
+          - Operator Countermeasures: volumes/vol-05_counterintel/14_operator_countermeasures.md
+      - Higher Orders:
+          - Tiers of AI:         volumes/vol-06_higher_orders/15_tiers_of_ai.md
+          - Phantom Capabilities: volumes/vol-06_higher_orders/16_phantom_capabilities.md
+      - Protocols:
+          - Loophole Catalog:    volumes/vol-07_protocols/17_loophole_catalog.md
+          - Attack Trees:        volumes/vol-07_protocols/18_attack_trees.md
+          - Operator Utilities:  volumes/vol-07_protocols/19_operator_utilities.md
+      - War Doctrine:
+          - Red vs Blue:         volumes/vol-08_war_doctrine/20_red_vs_blue.md
+          - Arms Race Forecast:  volumes/vol-08_war_doctrine/21_arms_race_forecast.md
+          - Final Briefing:      volumes/vol-08_war_doctrine/22_final_briefing.md
   - Annexes:
-      - Black Lexicon: docs/annexes/annex_a_black_lexicon.md
+      - Black Lexicon:           annexes/annex_a_black_lexicon.md
+      - Exploit Family Trees:    annexes/annex_b_exploit_trees.md
+      - Forensic Artifact Atlas: annexes/annex_c_forensic_atlas.md
+      - Operator Archetypes:     annexes/annex_d_operator_archetypes.md
+  - Appendices:
+      - Checklists:              appendices/appendix_checklists.md
+      - Flowcharts:              appendices/appendix_flowcharts.md
+      - Scenarios:               appendices/appendix_scenarios.md

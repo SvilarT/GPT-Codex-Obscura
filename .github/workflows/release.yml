@@ -1,0 +1,21 @@
+name: release
+on:
+  push:
+    tags: ["v*.*.*"]
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-recommended
+      - name: Build PDF
+        run: |
+          mkdir -p dist
+          pandoc docs/index.md $(find docs -name '*.md' | sort) \
+            -o dist/codex-obscura.pdf --toc --pdf-engine=xelatex
+      - name: Upload Release
+        uses: softprops/action-gh-release@v2
+        with: { files: dist/codex-obscura.pdf }

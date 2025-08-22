@@ -1,3 +1,3 @@
-# 06 suppression layers
+# 19 operator utilities
 
 > Stub — replace with content.

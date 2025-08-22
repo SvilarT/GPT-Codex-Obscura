@@ -1,3 +1,3 @@
-# 06 suppression layers
+# annex d operator archetypes
 
 > Stub — replace with content.

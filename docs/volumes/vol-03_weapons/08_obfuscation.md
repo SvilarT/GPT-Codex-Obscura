@@ -1,3 +1,3 @@
-# 06 suppression layers
+# 08 obfuscation
 
 > Stub — replace with content.

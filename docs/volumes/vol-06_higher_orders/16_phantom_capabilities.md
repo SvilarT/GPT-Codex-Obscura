@@ -1,3 +1,3 @@
-# 06 suppression layers
+# 16 phantom capabilities
 
 > Stub — replace with content.

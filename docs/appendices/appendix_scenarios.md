@@ -1,3 +1,3 @@
-# 06 suppression layers
+# appendix scenarios
 
 > Stub — replace with content.
