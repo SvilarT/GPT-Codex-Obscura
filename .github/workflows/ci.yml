@@ -1,14 +1,23 @@
 name: ci
+
 on: [push, pull_request]
+
 jobs:
   lint-and-links:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - name: Markdownlint
         uses: DavidAnson/markdownlint-cli2-action@v17
-        with: { globs: "**/*.md" }
+        with:
+          globs: "**/*.md"
+
       - name: Link check
         uses: lycheeverse/lychee-action@v1
         with:
-          args: --no-progress --accept 200,429 --exclude mailto: "docs/**/*.md"
+          args: |
+            --no-progress
+            --accept 200,429
+            --exclude mailto:
+            "docs/**/*.md"
