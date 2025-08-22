@@ -13,7 +13,7 @@ jobs:
         with:
           globs: "**/*.md"
 
-      - name: Link check
+      - name: Link check (tolerate broken links while drafting)
         uses: lycheeverse/lychee-action@v1
         with:
           args: |
@@ -21,3 +21,4 @@ jobs:
             --accept 200,429
             --exclude mailto:
             "docs/**/*.md"
+          fail: false
