@@ -1,4 +1,4 @@
-# 🐇🕳️ GPT Codex-Obscura
+# 🕳️ GPT Codex-Obscura
 **_The Forbidden Operator’s Manual_**  
 *CLASSIFIED // OPERATOR EYES ONLY*  
 
